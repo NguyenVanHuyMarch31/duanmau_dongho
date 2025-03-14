@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css copy/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .container {
+            width: 1400px;
+            ;
+            margin: auto;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            height: 50px;
+        }
+
+        header h2 {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .new h3 {
+            margin-top: 10px;
+        }
+
+        /*  */
+        .banner-1 img {
+            width: 100%;
+        }
+
+
+        nav ul li a:hover {
+            color: brown;
+            text-decoration: underline;
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            align-items: center;
+            height: 60px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+
+        }
+
+        /* Xử lý user */
+        .search input {
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+
+        .search button {
+            border: none;
+            font-size: 15px;
+
+        }
+
+        .user i {
+            margin-left: 100px;
+        }
+
+
+        /*  */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            grid-gap: 2rem;
+            margin-top: 20px;
+
+        }
+
+        .img-box img {
+            display: block;
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+
+
+        /*  */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 40px;
+        }
+
+        .news h2 {
+            text-align: center;
+            font-size: 100px;
+            margin: 100px 0;
+        }
+
+        .banner-2 img {
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        /*  *
+        
+/*  */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            grid-gap: 2rem;
+            margin-top: 20px;
+
+        }
+
+        .img-box img {
+            display: block;
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        /* .card styles */
+        .card {
+            display: block;
+            overflow: hidden;
+            border-radius: 0.6rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* .card-content styles */
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            height: 17%;
+            padding: 2.2rem;
+            overflow: hidden;
+            transition: height 0.7s;
+        }
+
+        /* Card heading styles */
+        .card-content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        /* Card text styles */
+        .card-content p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            padding: 1rem;
+        }
+
+        /* Card content hover effect */
+        .card:hover .card-content {
+            height: 60%;
+        }
+
+
+
+
+
+        /*  */
+        footer {
+            background-color: #000;
+            height: 400px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+
+        }
+
+        .footer-list p a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin-left: 70px;
+
+        }
+
+        .footer-list p a:hover {
+            text-decoration: underline;
+            color: blue;
+
+        }
+
+        .footer-list h2 {
+            color: white;
+            text-decoration: none;
+            margin-left: 70px;
+            font-size: 10px;
+
+        }
+
+       
+    </style>
+    <title>Thú cưng</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Thú cưng</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Chó cảnh</a></li>
+                <li><a href="#">Mèo cảnh</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+                <section class="search">
+                    <form action="">
+                        <input type="search" placeholder="Search">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                </section>
+
+            </ul>
+
+        </nav>
+        <section class="banner-1">
+            <img src="../img/corgi-4415649_1280.jpg" alt="">
+        </section>
+        <main>
+            <section class="new">
+                <h3>Race Day Apparel</h3>
+            </section>
+            <section class="card-grid">
+                <section class="card">
+                    <section class="img-box">
+                        <a href=""><img src="../img/san-pham/dog-4372036_640.jpg" alt=""></a>
+                    </section>
+                    <section class="card-content">
+                        <h2 class="card-heading">Chó cảnh</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            voluptate .</p>
+                        <button type="submit">Mua ngay</button>
+                    </section>
+                </section>
+                <section class="card">
+                    <section class="img-box">
+                        <img src="../img/san-pham/dog-4390885_640.jpg" alt="">
+                    </section>
+                    <section class="card-content">
+                        <h2 class="card-heading">Chó cảnh</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            voluptate .</p>
+                        <button type="submit">Mua ngay</button>
+                    </section>
+                </section>
+                <section class="card">
+                    <section class="img-box">
+                        <img src="../img/san-pham/dog-5357794_640.jpg" alt="">
+                    </section>
+                    <section class="card-content">
+                        <h2 class="card-heading">Chó cảnh</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            voluptate .</p>
+                        <button type="submit">Mua ngay</button>
+
+                    </section>
+                </section>
+
+            </section>
+        </main>
+
+
+
+        </section>
+        </section>
+        <footer>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH BẢO MẬT</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>QUY CHẾ HOẠT ĐỘNG</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH VẬN CHUYỂN</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>

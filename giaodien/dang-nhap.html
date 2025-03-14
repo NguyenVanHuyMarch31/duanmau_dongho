@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body{
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1400px;
+  margin: auto;
+}
+header{
+  background-color: #000;
+  color: white;
+  height: 50px;
+}
+header h2{
+  text-align: center;
+  line-height: 50px;
+}
+
+.new h3{
+  margin-top: 10px;
+}
+/*  */
+.banner-1 img {
+  width: 100%;
+}
+ 
+ 
+nav ul li a:hover {
+  color: brown;
+  text-decoration: underline;
+  
+  
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  height: 60px;
+ 
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+/* Xử lý user */
+.search input{
+  width: 200px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.search button{
+  border: none;
+  font-size: 15px;
+  
+}
+.user i{
+  margin-left: 100px;
+}
+.form-login{
+  height: 800px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  padding-bottom: 100px;
+  background-color: rgb(255, 255, 255) ;
+}
+.form-login-title{
+  font-size: 30px;
+  margin-bottom: 70px;
+
+}
+.form-login-main input{
+  padding-left: 20px;
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 5px;
+  
+}
+.form-login-main a{
+  font-size: 20px;
+  
+  
+}
+.form-login-main button{
+  padding-left: 20px;
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 5px;
+  
+  
+}
+.form-login-main button:hover{
+   background-color: rgb(0, 140, 54);
+  
+}
+
+/*  */
+footer{
+  background-color: #000;
+  height: 400px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+}
+.footer-list p a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 70px;
+  
+}
+.footer-list p a:hover{
+text-decoration: underline;
+color: blue;
+  
+}
+.footer-list h2{
+  color: white;
+  text-decoration: none;
+  margin-left: 70px;
+  font-size: 15px;
+  
+}
+
+ 
+    </style>
+
+    <title>Fashion</title>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <h2>Tiện ích mua sắm</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../home/index.html">Menu</a></li>
+                <li><a href="#">Chó cảnh</a></li>
+                <li><a href="#">Mèo cảnh</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+                <section class="search">
+                    <form action="">
+                        <input type="search" placeholder="Search">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                </section>
+                <section class="cart">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </section>
+                <section class="user">
+                    <a href="../login/login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </section>
+            </ul>
+
+        </nav>
+        <section class="banner-1">
+            <img src="../img/corgi-4415649_1280.jpg" alt="">
+        </section>
+        <section class="form-login">
+            <form action="">
+                <section class="form-login-title">
+                    <h2>Login</h2>
+                </section>
+                <section class="form-login-main">
+                    <input type="text" placeholder="Email / Số điện thoại"><br><br>
+                    <input type="text" placeholder="Mật khẩu" autocomplete="off"><br><br>
+                    <a href="">Quên mật khẩu ?</a><br><br>
+                    <button type="submit">Login</button>
+                </section>
+            </form>
+        </section>
+    </section>
+    </section>
+    <footer>
+        <section class="footer-list">
+            <h2>CHÍNH SÁCH BẢO MẬT</h2>
+            <p><a href="">Trung tâm trợ giúp</a></p>
+            <p><a href="">Hình thức thanh toán</a></p>
+            <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+            <p><a href="">Quy định sử dụng</a></p>
+            <p><a href="">Liên hệ</a></p>
+        </section>
+        <section class="footer-list">
+            <h2>QUY CHẾ HOẠT ĐỘNG</h2>
+            <p><a href="">Trung tâm trợ giúp</a></p>
+            <p><a href="">Hình thức thanh toán</a></p>
+            <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+            <p><a href="">Quy định sử dụng</a></p>
+            <p><a href="">Liên hệ</a></p>
+        </section>
+        <section class="footer-list">
+            <h2>CHÍNH SÁCH VẬN CHUYỂN</h2>
+            <p><a href="">Trung tâm trợ giúp</a></p>
+            <p><a href="">Hình thức thanh toán</a></p>
+            <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+            <p><a href="">Quy định sử dụng</a></p>
+            <p><a href="">Liên hệ</a></p>
+        </section>
+        <section class="footer-list">
+            <h2>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</h2>
+            <p><a href="">Trung tâm trợ giúp</a></p>
+            <p><a href="">Hình thức thanh toán</a></p>
+            <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+            <p><a href="">Quy định sử dụng</a></p>
+            <p><a href="">Liên hệ</a></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

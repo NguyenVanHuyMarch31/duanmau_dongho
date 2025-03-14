@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang tạo mới sản phẩm</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .taoMoi {
+        display: flex;
+    }
+
+    /* sidebar-left */
+
+    /* content-right */
+    h3 {
+        font-family: Arial, sans-serif;
+        font-size: 30px;
+    }
+
+    h3:hover {
+        color: rgb(0, 225, 124);
+    }
+
+    .taoMoi-right {
+        width: 75%;
+        padding: 20px;
+    }
+
+    form div {
+        margin-bottom: 16px;
+
+    }
+
+    form div:hover {
+        color: rgb(19, 188, 0);
+    }
+
+    label,
+    span {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="file"],
+    [type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .luaChon1,
+    .luaChon2 {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 10px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: #256228;
+    }
+    footer {
+            background-color: #000;
+            height: 400px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+
+        }
+
+        .footer-list p a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin-left: 70px;
+
+        }
+
+        .footer-list p a:hover {
+            text-decoration: underline;
+            color: blue;
+
+        }
+
+        .footer-list h2 {
+            color: white;
+            text-decoration: none;
+            margin-left: 70px;
+            font-size: 10px;
+
+        }
+
+</style>
+
+<body>
+    <div class="wrapper">
+        
+        <!-- header -->
+        
+
+        <!-- Nội dung -->
+        <main class="taoMoi">
+            <!-- Sidebar left: Thanh bên -->
+            <div class="taoMoi-left">
+                <ul>
+                    <a href="#">Dashboard</a> <br>
+                    <a href="#">Danh mục sản phẩm</a> <br>
+                    <a href="#">Sản phẩm</a> <br>
+                    <a href="#">Đơn hàng</a> <br>
+                </ul>
+            </div>
+            <!-- End .content-left -->
+
+            <div class="taoMoi-right">
+                <h3>Thêm sản phẩm</h3>
+                <hr>
+                <form action="">
+                    <div style="margin-bottom: 16px;">
+                        <label>Ảnh sản phẩm</label>
+                        <input type="file" name="file_upload" placeholder="">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label for="">Tên sản phẩm</label>
+                        <input type="text" name="name" placeholder="Nhập tên sản phẩm">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label for="">Mô tả</label>
+                        <textarea name="moTa" cols="30" rows="3" placeholder="Mô tả"></textarea>
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label for="">Số lượng</label>
+                        <input type="number" name="soLuong" placeholder="Nhập số lượng">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label for="">Giá</label>
+                        <input type="number" name="gia" placeholder="Nhập giá bán">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <span for="">Danh mục sản phẩm</span>
+                        <select name="danhMuc">
+                            <option value="">--Lựa chọn--</option>
+                            <option value="">Chó</option>
+                            <option value="">Mèo</option>
+                            <option value="">Thức ăn</option>
+                            <option value="">Thực phẩm chức năng</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <span>Lựa chọn</span>
+                        <div class="luaChon1">
+                            <input type="radio" name="luaChon1">
+                            <label for="">Còn hàng</label>
+                        </div>
+                        <div class="luaChon2">
+                            <input type="radio" name="luaChon2">
+                            <label for="">Hết hàng</label>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <button type="submit">Tạo mới</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- End .content-right -->
+        </main>
+          <!-- footer -->
+          <footer>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH BẢO MẬT</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>QUY CHẾ HOẠT ĐỘNG</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH VẬN CHUYỂN</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+            <section class="footer-list">
+                <h2>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</h2>
+                <p><a href="">Trung tâm trợ giúp</a></p>
+                <p><a href="">Hình thức thanh toán</a></p>
+                <p><a href="">Hướng dẫn đăng nhập Sapo</a></p>
+                <p><a href="">Quy định sử dụng</a></p>
+                <p><a href="">Liên hệ</a></p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
